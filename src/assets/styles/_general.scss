@@ -1,0 +1,75 @@
+// General styles
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  // border: greenyellow 1px solid;
+}
+
+body {
+  font-family: $font2;
+  font-weight: 400;
+  color: $colorText;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.25rem;
+  line-height: 1em;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $colorText;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $colorText2;
+}
+
+header {
+  font-family: $font1;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $color3;
+  color: $colorText;
+  text-align: center;
+  font-family: $font1;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
