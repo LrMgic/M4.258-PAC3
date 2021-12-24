@@ -1,4 +1,5 @@
 module.exports = {
+  important: '#app',
   purge: [
     './src/**/*.html',
     './src/**/*.vue',
