@@ -15,9 +15,6 @@
   }
 }
 
-// Interior 4
-@import "layouts/formulari";
-
 // TAILWIND PERSONAL
 .tw-shadow1 {
   box-shadow: 5px 5px 15px 6px $colorText2;
@@ -48,6 +45,11 @@
 .tw-artycle-m {
   margin: 1vw 5vw;
 }
+
+.form-control-trans {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 
 // TAILWIND END
 @tailwind utilities;

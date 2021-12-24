@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    textColor: {
+      'black': 'rgba(33, 37, 41, 1)',
+    },
     screens: {
       'sm': '640px',
       'md': '45em',
@@ -17,6 +20,7 @@ module.exports = {
       vw1: '1vw',
       vw2: '2vw',
       vw25: '25vw',
+      vw30: '30vw',
       vw45: '45vw',
       vw50: '50vw',
       vw75: '75vw',
@@ -44,6 +48,7 @@ module.exports = {
     spacing: {
       vw1: '1vw',
       vw2: '2vw',
+      vw5: '5vw',
       vw25: '25vw',
       vw45: '45vw',
       vw50: '50vw',
@@ -98,6 +103,7 @@ module.exports = {
         2: 'rgb(77, 81, 90)',
         3: 'rgba(39, 144, 185, 0.712)',
         4: 'rgb(214, 227, 255)',
+        5: 'rgba(206, 212, 218, 1)',
         Text: '#282828',
         Text2: '#575757',
       },
