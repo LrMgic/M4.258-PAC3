@@ -16,6 +16,24 @@
 }
 
 // TAILWIND PERSONAL
+.footer {
+  @apply text-white bg-propi-3 w-full;
+  box-shadow: 5px 5px 15px 6px $colorText2;
+}
+
+.nav-active {
+  @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-4 shadow-sm text-base font-medium text-white bg-propi-1 hover:bg-propi-1;
+}
+
+.nav-inactive {
+  @apply whitespace-nowrap text-base font-medium text-white hover:text-gray px-4 sm:px-6 lg:px-8;
+}
+
+.form-control-trans {
+  @apply border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-auto min-w-vw30 max-w-vw50;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .tw-shadow1 {
   box-shadow: 5px 5px 15px 6px $colorText2;
 }
@@ -28,28 +46,13 @@
   box-shadow: 0px 2px 4px 1px $colorText2;
 }
 
-.tw-position1 {
-  flex: auto;
+.tw-position {
+  @apply w-full md:flex-auto md:object-cover md:max-h-vh45;
+}
+
+.tw-position-md {
   object-position: 0% 25%;
 }
-
-.tw-artycle {
-  margin-top: 1vw;
-  margin-right: 1vw;
-  margin-bottom: 1vw;
-  margin-left: 1vw;
-  border-color: rgba(87, 87, 87, 1);
-  border-image: initial;
-}
-
-.tw-artycle-m {
-  margin: 1vw 5vw;
-}
-
-.form-control-trans {
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
 
 // TAILWIND END
 @tailwind utilities;

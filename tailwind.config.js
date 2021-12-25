@@ -9,11 +9,14 @@ module.exports = {
   theme: {
     extend: {},
     textColor: {
-      'black': 'rgba(33, 37, 41, 1)',
+      black: 'rgba(33, 37, 41, 1)',
+      white: 'rgb(255, 255, 255)',
+      gray: 'rgb(77, 81, 90)',
     },
     screens: {
       'sm': '640px',
       'md': '45em',
+      'lg': '1024px',
     },
     minWidth: {
       'xs': '20rem',
@@ -37,6 +40,12 @@ module.exports = {
       vh100: '100vh',
     },
     maxWidth: {
+      'xs': '20rem',
+      'sm': '24rem',
+      'md': '28rem',
+      'lg': '32rem',
+      'xl': '36rem',
+      '2xl': '42rem',
       vw1: '1vw',
       vw2: '2vw',
       vw25: '25vw',
@@ -116,7 +125,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      padding: ['hover'],
+    },
   },
   plugins: [],
 }

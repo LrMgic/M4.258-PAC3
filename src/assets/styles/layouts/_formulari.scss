@@ -1,9 +1,11 @@
 .main--contacta {
-  background: $color1;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @apply bg-propi-1 items-center justify-center text-center;
+  // background: $color1;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
 }
+
 .main--contacta__form {
   background-color: white;
   margin: 25px 10px;

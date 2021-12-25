@@ -29,7 +29,6 @@
                             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                             aria-expanded="false">
                             <span class="sr-only">Open menu</span>
-                            <!-- Heroicon name: outline/menu -->
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -38,18 +37,14 @@
                         </button>
                     </div>
                     <nav class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                        <a href="./index.html"
-                            class="whitespace-nowrap text-base font-medium text-white hover:text-gray-900 px-4 sm:px-6 lg:px-8">Portada</a>
+                        <a href="./index.html" class="nav-inactive">Portada</a>
 
-                        <a href="./nosaltres.html"
-                            class="whitespace-nowrap text-base font-medium text-white hover:text-gray-900 px-4 sm:px-6 lg:px-8">Qui
+                        <a href="./nosaltres.html" class="nav-inactive">Qui
                             som</a>
 
-                        <a href="./noticies.html"
-                            class="whitespace-nowrap text-base font-medium text-white hover:text-gray-900 px-4 sm:px-6 lg:px-8">Noticies</a>
+                        <a href="./noticies.html" class="nav-inactive">Noticies</a>
 
-                        <a href="./contacta.html"
-                            class="whitespace-nowrap inline-flex items-center justify-center px-4 py-4 shadow-sm text-base font-medium text-white bg-propi-1 hover:bg-propi-1">Contacta</a>
+                        <a href="./contacta.html" class="nav-active">Contacta</a>
                     </nav>
                 </div>
             </div>
@@ -58,19 +53,22 @@
 
     <main class="bg-propi-1 items-center justify-center text-center">
         <header>
-            <h2>Contacta amb nosaltres</h2>
+            <h1 class="bg-white border-solid border-t-2 border-b-2 border-propi-2 tw-shadow1 w-screen">Contacta amb nosaltres</h1>
         </header>
         <form name="contact" method="POST" data-netlify="true">
-            <div class="bg-white mt-6 mb-6 mr-3 ml-3 pt-6 pb-6 pr-0 pl-0 border-solid border-2 border-propi-Text2 rounded-md form-group">
+            <div
+                class="bg-white mt-6 mb-6 mr-3 ml-3 pt-6 pb-6 pr-0 pl-0 border-solid border-2 border-propi-Text2 rounded-md form-group">
                 <p class="text-xs"><span>Els campos señalats amb <strong><abbr title="obligatori">*</abbr></strong> son
                         obligatoris.</span></p>
-                <fieldset class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
+                <fieldset
+                    class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
                     <legend>Dades personals i de contacte</legend>
                     <div>
                         <label for="nome">
                             <span>Nom <strong><abbr title="obligatori">*</abbr></strong></span>
                         </label>
-                        <input type="text" class="border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-full form-control-trans w-auto min-w-vw30 max-w-vw50" id="name" name="name" placeholder="Per exemple, Gerard"
+                        <input type="text" class="form-control-trans" id="name" name="name"
+                            placeholder="Per exemple, Gerard"
                             pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
                             title="No se aceptan caracteres diferentes a letras, apóstrofes espacios o guiones. Tamaño de 2 a 64 caracteres"
                             required>
@@ -79,7 +77,7 @@
                         <label for="surname">
                             <span>Cognoms <strong><abbr title="obligatori">*</abbr></strong></span>
                         </label>
-                        <input type="text" class="border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-full form-control-trans w-auto min-w-vw30 max-w-vw50" id="surname" name="surname"
+                        <input type="text" class="form-control-trans" id="surname" name="surname"
                             placeholder="Per exemple, Vidal"
                             pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,128}"
                             title="No se aceptan caracteres diferentes a letras, apóstrofes espacios o guiones. Tamaño de 2 a 128 caracteres"
@@ -89,24 +87,25 @@
                         <label for="email">
                             <span>Correu electrònic <strong><abbr title="obligatori">*</abbr></strong></span>
                         </label>
-                        <input type="email" class="border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-full form-control-trans w-auto min-w-vw30 max-w-vw50" id="email" name="email"
+                        <input type="email" class="form-control-trans" id="email" name="email"
                             placeholder="Per exemple, eexemple@exemple.com" required>
                     </div>
                     <div>
                         <label for="telephon">
                             <span>Teléfon <strong><abbr title="obligatori">*</abbr></strong></span>
                         </label>
-                        <input type="tel" class="border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-full form-control-trans w-auto min-w-vw30 max-w-vw50" id="telephon" name="telephon" required>
+                        <input type="tel" class="form-control-trans" id="telephon" name="telephon" required>
                     </div>
                 </fieldset>
 
-                <fieldset class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
+                <fieldset
+                    class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
                     <legend>Dades personals i de contacte</legend>
                     <div>
                         <label for="misage">
                             <span>Misatge <strong><abbr title="obligatori">*</abbr></strong></span>
                         </label>
-                        <textarea type="text" class="border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-full form-control-trans w-auto min-w-vw30 max-w-vw50" id="misage" name="misage"
+                        <textarea type="text" class="form-control-trans" id="misage" name="misage"
                             placeholder="Escriu el teu misage" rows="4" cols="50" required>
                     </div>
                 </fieldset>
@@ -129,7 +128,7 @@
         </form>
     </main>
 
-    <footer class="text-white tw-shadow1 bg-propi-3 w-full">
+    <footer class="footer">
         <p class="p-0 min-w-0">2021 © Gerard y Vidal Gonzalez</p>
         <ul>
             <li class="inline-block my-0 mx-1"><a class="text-white no-underline" href="*">Aviso legal</a></li>
