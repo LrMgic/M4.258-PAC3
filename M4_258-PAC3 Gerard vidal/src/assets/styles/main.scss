@@ -1,0 +1,55 @@
+// TAILWIND START
+@tailwind base;
+@tailwind components;
+
+// COMUNES
+@import "variables";
+@import "general";
+
+// Index
+
+@import "layouts/homeS";
+@supports (display: grid) {
+  @media (min-width: 42em) and (min-height: 27em) {
+    @import "layouts/homeM";
+  }
+}
+
+// TAILWIND PERSONAL
+.footer {
+  @apply text-white bg-propi-3 w-full;
+  box-shadow: 5px 5px 15px 6px $colorText2;
+}
+
+.nav-active {
+  @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-4 shadow-sm text-base font-medium text-white bg-propi-1 hover:bg-propi-1;
+}
+
+.nav-inactive {
+  @apply whitespace-nowrap text-base font-medium text-white hover:text-gray px-4 sm:px-6 lg:px-8;
+}
+
+.form-control-trans {
+  @apply border-propi-5 text-black appearance-none bg-clip-padding bg-white rounded border-solid border block font-normal text-base leading-normal py-1 px-3 w-auto min-w-vw30 max-w-vw50;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.tw-shadow1 {
+  box-shadow: 5px 5px 15px 6px $colorText2;
+}
+
+.tw-shadow2 {
+  box-shadow: 0px 5px 10px 4px $colorText2;
+}
+
+.tw-shadow3 {
+  box-shadow: 0px 2px 4px 1px $colorText2;
+}
+
+.tw-position {
+  @apply w-full md:flex-auto md:object-cover md:max-h-vh45;
+  object-position: 0% 25%;
+}
+
+// TAILWIND END
+@tailwind utilities;

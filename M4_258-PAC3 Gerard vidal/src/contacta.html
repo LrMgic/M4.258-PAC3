@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/src/assets/images/logo_curt.png">
+    <meta name="author" content="Gerard Vidal Gonzalez">
+    <meta name="description"
+        content="La pàgina de portada: L’orfe del Clan dels Zhao, un clàssic èpic xinès del segle XIII, escrit per Ji Juxiang i representada per el ">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>UOC - M4.258 - PAC 3 de Gerard Vidal</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+</head>
+
+<body id="app">
+    <header>
+        <div class="relative bg-propi-3">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="flex justify-around items-center md:justify-start md:space-x-10">
+                    <div class="flex justify-start items-stretch lg:w-0 lg:flex-1 min-h-full">
+                        <a href="#" class="min-h-full">
+                            <span class="sr-only">Dos mes Dos</span>
+                            <img class="w-auto h-14 md:h-14 max-w-vw25" src="./assets/images/logodos.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden py-3">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                        <a href="./index.html" class="nav-inactive">Portada</a>
+
+                        <a href="./nosaltres.html" class="nav-inactive">Qui
+                            som</a>
+
+                        <a href="./noticies.html" class="nav-inactive">Noticies</a>
+
+                        <a href="./contacta.html" class="nav-active">Contacta</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-propi-1 items-center justify-center text-center">
+        <header>
+            <h1 class="bg-white border-solid border-t-2 border-b-2 border-propi-2 tw-shadow1 w-screen">Contacta amb nosaltres</h1>
+        </header>
+        <form name="contact" method="POST" data-netlify="true">
+            <div
+                class="bg-white mt-6 mb-6 mr-3 ml-3 pt-6 pb-6 pr-0 pl-0 border-solid border-2 border-propi-Text2 rounded-md form-group">
+                <p class="text-xs"><span>Els campos señalats amb <strong><abbr title="obligatori">*</abbr></strong> son
+                        obligatoris.</span></p>
+                <fieldset
+                    class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
+                    <legend>Dades personals i de contacte</legend>
+                    <div>
+                        <label for="nome">
+                            <span>Nom <strong><abbr title="obligatori">*</abbr></strong></span>
+                        </label>
+                        <input type="text" class="form-control-trans" id="name" name="name"
+                            placeholder="Per exemple, Gerard"
+                            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+                            title="No se aceptan caracteres diferentes a letras, apóstrofes espacios o guiones. Tamaño de 2 a 64 caracteres"
+                            required>
+                    </div>
+                    <div>
+                        <label for="surname">
+                            <span>Cognoms <strong><abbr title="obligatori">*</abbr></strong></span>
+                        </label>
+                        <input type="text" class="form-control-trans" id="surname" name="surname"
+                            placeholder="Per exemple, Vidal"
+                            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,128}"
+                            title="No se aceptan caracteres diferentes a letras, apóstrofes espacios o guiones. Tamaño de 2 a 128 caracteres"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <span>Correu electrònic <strong><abbr title="obligatori">*</abbr></strong></span>
+                        </label>
+                        <input type="email" class="form-control-trans" id="email" name="email"
+                            placeholder="Per exemple, eexemple@exemple.com" required>
+                    </div>
+                    <div>
+                        <label for="telephon">
+                            <span>Teléfon <strong><abbr title="obligatori">*</abbr></strong></span>
+                        </label>
+                        <input type="tel" class="form-control-trans" id="telephon" name="telephon" required>
+                    </div>
+                </fieldset>
+
+                <fieldset
+                    class="pb-3 rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
+                    <legend>Dades personals i de contacte</legend>
+                    <div>
+                        <label for="misage">
+                            <span>Misatge <strong><abbr title="obligatori">*</abbr></strong></span>
+                        </label>
+                        <textarea type="text" class="form-control-trans" id="misage" name="misage"
+                            placeholder="Escriu el teu misage" rows="4" cols="50" required>
+                    </div>
+                </fieldset>
+
+                <div class="rounded-xl border-solid border-propi-2 border-2 mb-vw1 mt-vw1 ml-vw5 mr-vw5 flex flex-col items-center content-center justify-center">
+                    <p class="text-xs">INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE TORRE PER TORRE.
+                        Finalitats: recollida de dades per a la inscripció als cursos. Legitimació:
+                        Consentiment de linteressat. Destinataris: No estan previstes cessions de dades a
+                        tercers, excepte obligació legal. Drets: Podeu retirar el vostre consentiment a
+                        qualsevol moment, així com accedir, rectificar, suprimir les vostres dades i altres drets
+                        adreçant-se a info@torrextorre.org. Informació Addicional: Podeu ampliar la
+                        informació a l'enllaç d'Avís Legal i Política de privadesa.</p>
+                    <label for="cesiondatos">
+                        <input style="min-width: 10px;" type="checkbox" id="cesiondatos" name="cesiondatos" value="acepto" required>
+                        <span>He leído y acepto la política de privacidad <strong><abbr
+                                    title="requerido">*</abbr></strong></span>
+                    </label>
+                    <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>
+                </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="p-0 min-w-0">2021 © Gerard y Vidal Gonzalez</p>
+        <ul>
+            <li class="inline-block my-0 mx-1"><a class="text-white no-underline" href="*">Aviso legal</a></li>
+            <li class="inline-block my-0 mx-1"><a class="text-white no-underline" href="*">Política de privacidad</a></li>
+            <li class="inline-block my-0 mx-1"><a class="text-white no-underline" href="*">Política de cookies</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

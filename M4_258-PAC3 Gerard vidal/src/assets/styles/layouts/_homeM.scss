@@ -1,0 +1,112 @@
+.main--portada {
+  max-width: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns:
+    2fr minmax(10em, max-content) minmax(14em, max-content)
+    minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
+  grid-template-rows: minmax(min-content, 35vh) minmax(min-content, 40vh) 12vh;
+
+  .main--portada_Title {
+    margin-top: 2vh;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    z-index: -2;
+    padding-left: 0.25em;
+    margin-bottom: initial;
+    h1 {
+      font-size: 7vw;
+      text-shadow: 8px 9px 8px $colorText2;
+      margin: 0px;
+    }
+    p {
+      font-size: 3vw;
+      text-shadow: 5px 7px 2px rgb(39 144 185 / 71%);
+    }
+  }
+  .main--portada_Linea {
+    background-color: $color1;
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+  }
+  @media (min-width: 1200px) {
+    .main--portada_Title {
+      font-size: 86px;
+      margin-top: 4vh;
+    }
+    .main--portada_Img {
+      opacity: 1;
+    }
+  }
+  .main--portada_Lateral {
+    background-color: $color1;
+    grid-row: 1 / -1;
+    grid-column: 6 / 7;
+    writing-mode: vertical-rl;
+    margin-bottom: initial;
+    color: $colorText;
+  }
+
+  hr {
+    grid-column: 5 / 6;
+    grid-row: 2;
+    height: 6px;
+    background-color: $colorText;
+    width: 20ch;
+  }
+
+  .main--portada_about {
+    grid-column: 5 / 6;
+    grid-row: 2;
+    align-self: end;
+    padding-bottom: 4vh;
+    margin-bottom: initial;
+    padding: 5px;
+  }
+  a {
+    grid-column: 5 / 6;
+    grid-row: 3/4;
+    justify-self: end;
+    align-self: center;
+    margin-bottom: initial;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 4px;
+      background-color: $danger;
+      width: 4ch;
+      margin-bottom: 1em;
+    }
+  }
+
+  img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+  }
+
+  .location {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    z-index: 2;
+    background: $color4;
+    text-align: center;
+    display: flex;
+
+    p {
+      margin: auto;
+    }
+  }
+
+  button {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    position: initial;
+    padding: 0;
+  }
+}
+@media (min-width: 48em) and (min-height: 27em) {
+  .main--portada hr {
+    opacity: 1;
+  }
+}
